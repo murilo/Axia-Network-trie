@@ -1,0 +1,1 @@
+MemoryDB is a reference counted memory-based [`HashDB`](https://github.com/axia-tech/axia-common/tree/master/hash-db) implementation backed by a `HashMap`.

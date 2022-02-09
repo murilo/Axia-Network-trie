@@ -1,0 +1,28 @@
+[package]
+name = "memory-db"
+version = "0.27.0"
+authors = ["AXIA Technologies <admin@axiacoin.network>"]
+description = "In-memory implementation of hash-db, useful for tests"
+repository = "https://github.com/axia-tech/trie"
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+axia-util-mem = { git = "https://github.com/axia-tech/axia-common", version = "0.10.2", default-features = false, features = ["hashbrown"] }
+hash-db = { version = "0.15.2", path = "../hash-db", default-features = false }
+hashbrown = { version = "0.11", default-features = false, features = [ "ahash" ] }
+
+[dev-dependencies]
+keccak-hasher = { path = "../test-support/keccak-hasher" }
+criterion = "0.3.3"
+
+[features]
+default = ["std"]
+std = [
+  "hash-db/std",
+  "axia-util-mem/std",
+]
+
+[[bench]]
+name = "bench"
+harness = false
