@@ -499,7 +499,7 @@ pub struct ReferenceNodeCodec<H>(PhantomData<H>);
 
 /// Simple reference implementation of a `NodeCodec`.
 /// Even if implementation follows initial specification of
-/// https://github.com/w3f/axcaxc-re-spec/issues/8, this may
+/// https://github.com/w3f/axiaaxc-re-spec/issues/8, this may
 /// not follow it in the future, it is mainly the testing codec without extension node.
 #[derive(Default, Clone)]
 pub struct ReferenceNodeCodecNoExt<H>(PhantomData<H>);

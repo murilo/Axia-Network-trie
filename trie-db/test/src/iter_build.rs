@@ -313,7 +313,7 @@ fn too_big_nibble_length_new () {
 	]);
 }
 #[test]
-fn axc_re_test () {
+fn axia_re_test () {
 	compare_implementations(vec![
 		(vec![77, 111, 111, 55, 111, 104, 121, 97], vec![68, 97, 105, 55, 105, 101, 116, 111]),
 		(vec![101, 105, 67, 104, 111, 111, 66, 56], vec![97, 56, 97, 113, 117, 53, 97]),
